@@ -6,7 +6,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@400;600;700&display=swap">
     <style>
-        html, body {
+        @media only screen and (max-width: 992px) {
+            html, body {
             height: 100%;
             width: 100%;
             margin: 0;
@@ -197,6 +198,201 @@
                 opacity: 1;
                 transform: translateY(0);
             }
+        }
+        }
+        @media only screen and (max-width: 480px) {
+            html, body {
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            color: white;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .page {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            width: 100%;
+        }
+
+        .namebar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex: 30px;
+            padding: 5px 10px;
+            border-bottom: 2.5px solid black;
+            background-color: #0E0E0F;
+            animation: fadeInDown 1s;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: row;
+            flex: 1;
+            animation: fadeInUp 1s;
+        }
+
+        .profile {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            margin: 0;
+            padding: 2%;
+            background-color: #181818;
+        }
+
+        .profile p {
+            margin: 3px;
+            padding-left: 10px;
+            font-size: 16px;
+        }
+
+        .profile h3, h5 {
+            margin: 10px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .profile-des {
+            flex: 3;
+        }
+
+        .profile-edu {
+            flex: 7;
+        }
+
+        .profile-skills {
+            flex: 7;
+        }
+
+        .project {
+            display: flex;
+            flex-direction: column;
+            align-content: space-around;
+            flex: 2;
+            margin: 0;
+            padding: 0;
+            background-color: #1F1F1F;
+        }
+
+        .project p {
+            margin: 5px;
+            font-size: 18px;
+        }
+
+        .project a {
+            text-decoration: none;
+            color: black;
+            background-color: white;
+            height: 20px;
+            width: 90px;
+            border-radius: 5px;
+            text-align: center;
+            padding: 3px;
+            transition: background-color 0.3s, color 0.3s;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .project a:hover {
+            background-color: #ff5722;
+            color: white;
+        }
+
+        .project-div {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-content: space-around;
+            height: fit-content;
+            width: 200px;
+            border-radius: 10px;
+            background-color: grey;
+            margin: 20px;
+            padding: 10px;
+            transition: transform 0.3s, background-color 0.3s;
+        }
+
+        .project-div:hover {
+            transform: translateY(-10px);
+            background-color: #424242;
+        }
+
+        .name {
+            flex: 3;
+            text-align: left;
+            font-size: 1.5em;
+            font-weight: 700;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .search-box {
+            flex: 6;
+            display: flex;
+            justify-content: center;
+            padding: 5px;
+        }
+
+        .search-box input {
+            width: 100%;
+            padding: 5px;
+            border-radius: 5px;
+            border: none;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .social-media {
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
+            gap: 10px;
+        }
+
+        .social-media a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            color: black;
+            background-color: white;
+            padding: 5px;
+            border-radius: 50%;
+            width: 35px;
+            height: 35px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .social-media a:hover {
+            background-color: #ff5722;
+            color: white;
+        }
+
+        .social-media svg {
+            width: 20px;
+            height: 20px;
+        }  
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
         }
     </style>
 </head>
