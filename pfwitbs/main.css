@@ -1,3 +1,7 @@
+html{
+  scroll-behavior: smooth;
+}
+
 body {
     padding: 0;
     margin: 0;
@@ -14,7 +18,7 @@ body {
   background-color: rgb(5, 16, 30);
 }
 .navbar-nav .nav-link, .navbar .navbar-brand{
-    font-family: "Playwrite DK Loopet", cursive;
+    font-family: Arial, Helvetica, sans-serif;
     font-optical-sizing: auto;
     font-weight: bold;
     font-style: normal;
@@ -29,18 +33,6 @@ body {
     .responsive-text {
       font-size: 0.875rem; /* Equivalent to 14px */
     }
-}
-
-:root {
-  --navbar-height: 8%; /* Set to the height of your navbar */
-}
-
-.navbar {
-  height: var(--navbar-height);
-}
-
-#content {
-  padding-top: var(--navbar-height);
 }
 .navbar {
     background:rgb(14, 14, 15);
@@ -95,11 +87,9 @@ body {
   position: relative;
   text-align: center;
   color: #dc0000;
-  padding: 10px;
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
   background-color: rgb(128, 128, 128, 0.1);
-  padding-top: 56px;
   color: #333;
 }
 .stepforward h1 {
@@ -112,7 +102,7 @@ body {
   
   .stepforward p, .stepforward h3, .stepforward h5 {
     margin: 15px 0;
-    font-family: "Lora", serif;
+    font-family: Arial, Helvetica, sans-serif;
   font-optical-sizing: auto;
   font-weight: normal;
   font-style: normal;
@@ -192,8 +182,15 @@ div {
     box-shadow: 0 6px 50px rgb(0 118 255 / 23%);
 }
 
+.name1 {
+  font-size: 8vh;
+  font-weight: bolder;
+  text-align: start;
+  color: #0070f3;
+  padding: auto;
+}
 .name {
-  font-size: 10vh;
+  font-size: 6vh;
   font-weight: bolder;
   text-align: start;
   color: #0070f3;
