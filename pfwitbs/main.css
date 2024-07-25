@@ -32,7 +32,7 @@ body {
 }
 
 :root {
-  --navbar-height: 56px; /* Set to the height of your navbar */
+  --navbar-height: 8%; /* Set to the height of your navbar */
 }
 
 .navbar {
@@ -191,4 +191,11 @@ div {
     background: rgba(0,118,255,0.9);
     box-shadow: 0 6px 50px rgb(0 118 255 / 23%);
 }
-   
+
+.name {
+  font-size: 10vh;
+  font-weight: bolder;
+  text-align: start;
+  color: #0070f3;
+  padding: auto;
+}
