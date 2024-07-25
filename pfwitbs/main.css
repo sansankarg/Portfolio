@@ -3,6 +3,13 @@ body {
     margin: 0;
     background: #f2f6e9;
 }
+.col-6 {
+  padding-left: 0%;
+  padding-bottom: 0%;
+  margin-left: 0%;
+  margin-bottom: 0%;
+}
+
 .navbar{
   background-color: rgb(5, 16, 30);
 }
@@ -23,8 +30,21 @@ body {
       font-size: 0.875rem; /* Equivalent to 14px */
     }
 }
+
+:root {
+  --navbar-height: 56px; /* Set to the height of your navbar */
+}
+
+.navbar {
+  height: var(--navbar-height);
+}
+
+#content {
+  padding-top: var(--navbar-height);
+}
 .navbar {
     background:rgb(14, 14, 15);
+    
 }
 .nav-link,
 .navbar-brand {
@@ -79,7 +99,7 @@ body {
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
   background-color: rgb(128, 128, 128, 0.1);
-  
+  padding-top: 56px;
   color: #333;
 }
 .stepforward h1 {
