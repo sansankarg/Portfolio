@@ -1,3 +1,7 @@
+p {
+    font-size: medium;
+    color: white;
+}
 html {
     scroll-behavior: smooth;
 }
